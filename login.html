@@ -1,0 +1,66 @@
+<html>
+<head>
+    <title>Login - Online Recruitment Solution</title>
+    <style>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 10;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    background-color: #4CAF50;
+    color: white;
+    margin: 0;
+    padding: 20px;
+}
+
+form {
+    display: block;
+    margin: 20px auto;
+    max-width: 400px;
+    padding: 20px;
+}
+
+label {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+input[type="email"],
+input[type="password"] {
+    border: 1px solid #ccc;
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2em;
+    padding: 10px 20px;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Login to Online Recruitment Solution</h1>
+    <p>Please enter your email and password to access your account.</p>
+    <form action="login.php" method="post">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <input type="submit" value="Login">
+    </form>
+    <p >Don't have an account? <a href="register.html">Register here</a>.</p>
+</body>
+</html>

@@ -1,0 +1,509 @@
+
+<html>
+<head>
+    <title>Online Recruitment Solution</title>
+    <style>
+        /* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap'); */
+
+/* body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+} */
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    font-family: sans-serif;
+}
+.body {
+    color: #17191b;
+    -webkit-text-fill-color: inherit;
+    cursor: default;
+    background: #F4F4F4;
+    /* background-image: url(https://global-uploads.webflow.com/63ff4e7ba132c5294b3bcddf/6411abbc93591b77d72d4f3c_noise.webp); */
+    background-position: 0 0;
+    background-size: 32px;
+    background-clip: border-box;
+    flex-flow: column;
+    justify-content: space-around;
+    /* font-family: Unbounded variablefont wght,sans-serif; */
+    /* font-size: 16px; */
+    line-height: 1.1;
+    display: flex;
+    overflow: visible;
+}
+
+h1 {
+    animation: fadeIn 2ms;
+    background-color: #4CAF50;
+    color: white;
+    margin: 0;
+    padding: 20px;
+}
+
+p {
+    animation: fadeIn 2ms;
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+}
+
+ul {
+    animation: fadeIn 2ms;
+    list-style-type: none;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 20px;
+}
+
+li {
+    animation: fadeIn 2ms;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+a {
+    animation: fadeIn 2ms;
+    background-color: #4CAF50;
+    border-radius: 5px;
+    
+    color: white;
+    display:inline-block;
+    font-size: 1.2em;
+    margin: 10px auto;
+    padding: 10px 20px;
+    text-decoration:none;
+}
+.paragraph.weight-light.caps.display {
+    text-align: center;
+    /* font-size: 4em; */
+    font-family:sans-serif ;
+    line-height: 130%;
+    /* color: red; */
+}
+
+.paragraph.weight-light.caps.display:hover{
+    font-size: large;
+    transition: all .3s;
+    /* font-variation-settings: &quot;wght&quot; 300; opacity: 1; */
+
+}
+/* @media (min-width:992px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="b5a0569f-c1eb-b2f3-029a-9c83e390c0db"] 
+{font-variation-settings:"wght" 300;}html.w-mod-js:not(.w-mod-ix) [data-w-id="c73f3720-8a43-f5f2-1770-7bf23fbeaad9"] 
+{font-variation-settings:"wght" 300;}html.w-mod-js:not(.w-mod-ix) [data-w-id="640f6272-68e8-dd36-864b-6ae8931897d7"] 
+{font-variation-settings:"wght" 300;}html.w-mod-js:not(.w-mod-ix) [data-w-id="5a6535bf-9b43-250c-63d9-fddf33034040"]
+ {font-variation-settings:"wght" 300;}html.w-mod-js:not(.w-mod-ix) [data-w-id="dfeb2398-464e-cf1d-057f-cee0c5d876bf"] 
+ {font-variation-settings:"wght" 300;}html.w-mod-js:not(.w-mod-ix) [data-w-id="d3682a53-a0d5-024b-b98b-ad9a423e0bc5"] 
+ {font-variation-settings:"wght" 300;}html.w-mod-js:not(.w-mod-ix) [data-w-id="098b9a53-c4ab-5ee5-8c10-1991f21dd1a3"] 
+ {font-variation-settings:"wght" 300;}html.w-mod-js:not(.w-mod-ix) [data-w-id="2e848689-bbc4-5493-4b3a-823d84b70a67"]
+  {font-variation-settings:"wght" 300;}html.w-mod-js:not(.w-mod-ix) [data-w-id="17578a41-54ab-1cc4-300c-2999b4b79eff"]
+   {font-variation-settings:"wght" 300;}html.w-mod-js:not(.w-mod-ix) [data-w-id="e299d00f-1741-6316-8a4e-cd01bfce8d04"] 
+   {font-variation-settings:"wght" 300;}html.w-mod-js:not(.w-mod-ix) [data-w-id="3956cef8-e14b-455e-3b71-2a1e871f8ee8"] 
+   {font-variation-settings:"wght" 300;}html.w-mod-js:not(.w-mod-ix) [data-w-id="97c49efa-e198-a50f-6ed5-39f9b18e73fe"] 
+   {-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);filter: grayscale(50%);}html.w-mod-js:not(.w-mod-ix) [data-w-id="c4428531-3dc2-5a23-40b1-52e3f619fb76"] {font-variation-settings:"wght" 300;}html.w-mod-js:not(.w-mod-ix) [data-w-id="a789cbcc-1ed7-ea05-a1c5-3ff4024190fb"] {font-variation-settings:"wght" 300;}}@media (max-width:991px) and (min-width:768px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="e59f350a-4525-a10e-c21f-ce34764774d5"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="c0a54174-8baa-c19f-3e55-1f83812c0265"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="d3682a53-a0d5-024b-b98b-ad9a423e0bc5"] {font-variation-settings:"wght" 300;}html.w-mod-js:not(.w-mod-ix) [data-w-id="c73f3720-8a43-f5f2-1770-7bf23fbeaad9"] {font-variation-settings:"wght" 300;}html.w-mod-js:not(.w-mod-ix) [data-w-id="b5a0569f-c1eb-b2f3-029a-9c83e390c0db"] {font-variation-settings:"wght" 300;}html.w-mod-js:not(.w-mod-ix) [data-w-id="640f6272-68e8-dd36-864b-6ae8931897d7"] {font-variation-settings:"wght" 300;}html.w-mod-js:not(.w-mod-ix) [data-w-id="5a6535bf-9b43-250c-63d9-fddf33034040"] {font-variation-settings:"wght" 300;}html.w-mod-js:not(.w-mod-ix) [data-w-id="dfeb2398-464e-cf1d-057f-cee0c5d876bf"] {font-variation-settings:"wght" 300;}html.w-mod-js:not(.w-mod-ix) [data-w-id="2e848689-bbc4-5493-4b3a-823d84b70a67"] {font-variation-settings:"wght" 300;}html.w-mod-js:not(.w-mod-ix) [data-w-id="17578a41-54ab-1cc4-300c-2999b4b79eff"] {font-variation-settings:"wght" 300;}html.w-mod-js:not(.w-mod-ix) [data-w-id="e299d00f-1741-6316-8a4e-cd01bfce8d04"] {font-variation-settings:"wght" 300;}html.w-mod-js:not(.w-mod-ix) [data-w-id="3956cef8-e14b-455e-3b71-2a1e871f8ee8"] {font-variation-settings:"wght" 300;}html.w-mod-js:not(.w-mod-ix) [data-w-id="a789cbcc-1ed7-ea05-a1c5-3ff4024190fb"] {font-variation-settings:"wght" 300;}}@media (max-width:767px) and (min-width:480px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="e59f350a-4525-a10e-c21f-ce34764774d5"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="c0a54174-8baa-c19f-3e55-1f83812c0265"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="d3682a53-a0d5-024b-b98b-ad9a423e0bc5"] {font-variation-settings:"wght" 300;}html.w-mod-js:not(.w-mod-ix) [data-w-id="c73f3720-8a43-f5f2-1770-7bf23fbeaad9"] {font-variation-settings:"wght" 300;}html.w-mod-js:not(.w-mod-ix) [data-w-id="b5a0569f-c1eb-b2f3-029a-9c83e390c0db"] {font-variation-settings:"wght" 300;}html.w-mod-js:not(.w-mod-ix) [data-w-id="640f6272-68e8-dd36-864b-6ae8931897d7"] {font-variation-settings:"wght" 300;}html.w-mod-js:not(.w-mod-ix) [data-w-id="5a6535bf-9b43-250c-63d9-fddf33034040"] {font-variation-settings:"wght" 300;}html.w-mod-js:not(.w-mod-ix) [data-w-id="dfeb2398-464e-cf1d-057f-cee0c5d876bf"] {font-variation-settings:"wght" 300;}html.w-mod-js:not(.w-mod-ix) [data-w-id="2e848689-bbc4-5493-4b3a-823d84b70a67"] {font-variation-settings:"wght" 300;}html.w-mod-js:not(.w-mod-ix) [data-w-id="17578a41-54ab-1cc4-300c-2999b4b79eff"] {font-variation-settings:"wght" 300;}html.w-mod-js:not(.w-mod-ix) [data-w-id="e299d00f-1741-6316-8a4e-cd01bfce8d04"] {font-variation-settings:"wght" 300;}html.w-mod-js:not(.w-mod-ix) [data-w-id="3956cef8-e14b-455e-3b71-2a1e871f8ee8"] {font-variation-settings:"wght" 300;}html.w-mod-js:not(.w-mod-ix) [data-w-id="a789cbcc-1ed7-ea05-a1c5-3ff4024190fb"] {font-variation-settings:"wght" 300;}}@media (max-width:479px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="e59f350a-4525-a10e-c21f-ce34764774d5"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="c0a54174-8baa-c19f-3e55-1f83812c0265"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="d3682a53-a0d5-024b-b98b-ad9a423e0bc5"] {font-variation-settings:"wght" 300;}html.w-mod-js:not(.w-mod-ix) [data-w-id="c73f3720-8a43-f5f2-1770-7bf23fbeaad9"] {font-variation-settings:"wght" 300;}html.w-mod-js:not(.w-mod-ix) [data-w-id="b5a0569f-c1eb-b2f3-029a-9c83e390c0db"] {font-variation-settings:"wght" 300;}html.w-mod-js:not(.w-mod-ix) [data-w-id="640f6272-68e8-dd36-864b-6ae8931897d7"] {font-variation-settings:"wght" 300;}html.w-mod-js:not(.w-mod-ix) [data-w-id="5a6535bf-9b43-250c-63d9-fddf33034040"] 
+{font-variation-settings:"wght" 300;}html.w-mod-js:not(.w-mod-ix) [data-w-id="dfeb2398-464e-cf1d-057f-cee0c5d876bf"]
+ {font-variation-settings:"wght" 300;}html.w-mod-js:not(.w-mod-ix) [data-w-id="2e848689-bbc4-5493-4b3a-823d84b70a67"] 
+ {font-variation-settings:"wght" 300;}html.w-mod-js:not(.w-mod-ix) [data-w-id="17578a41-54ab-1cc4-300c-2999b4b79eff"] 
+ {font-variation-settings:"wght" 300;}html.w-mod-js:not(.w-mod-ix) [data-w-id="e299d00f-1741-6316-8a4e-cd01bfce8d04"] 
+ {font-variation-settings:"wght" 300;}html.w-mod-js:not(.w-mod-ix) [data-w-id="3956cef8-e14b-455e-3b71-2a1e871f8ee8"] 
+ {font-variation-settings:"wght" 300;}html.w-mod-js:not(.w-mod-ix) [data-w-id="a789cbcc-1ed7-ea05-a1c5-3ff4024190fb"] 
+ {font-variation-settings:"wght" 300;}} */
+.paragraph.weight-light.caps {
+    text-transform: uppercase;
+}
+.paragraph.weight-light {
+    flex: none;
+    /* font-weight: 300; */
+}
+
+element.style {
+    font-variation-settings: "wght" 300;
+    opacity: 1;
+}
+.hero-container.home {
+    width: auto;
+    margin-bottom: 0;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+.hero-container {
+    width: 100%;
+    height: auto;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    flex-direction: column;
+    margin-bottom: 100px;
+    padding-top: 220px;
+    padding-left: 160px;
+    padding-right: 160px;
+    display: flex;
+}
+/* @media screen and (max-width: 767px) */
+/* .paragraph.weight-light.caps.display {
+/* font-size: 2.3em; */
+/* } */
+
+@keyframes fadeIn {
+   from { opacity:0; }
+   to { opacity:1; }
+}
+.ic-figure-hover {
+    text-align: center;
+    margin-top: 25%;
+    display: none;
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+}
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+    
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+    
+  > img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 10%;
+        height: 100%;
+  }
+}
+
+
+section {
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 1044px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.post img, iframe {
+    display: block;
+    margin: 36px auto;
+    max-width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,.25);
+}
+.carousel {
+    display: block;
+    text-align: left;
+    position: relative;
+    margin-bottom: 22px;
+    border-radius: 1px;
+    
+word-spacing: 1px;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    font-family: -apple-system,Nunito,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;
+    color: #000;
+    font-weight: 400;
+    font-size: 20px;
+    box-sizing: border-box;
+    display: block;
+    margin: 36px auto;
+    max-width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,.25);
+    margin: 0 -10px;
+    
+    > input {
+        clip: rect(1px, 1px, 1px, 1px);
+        /* clip-path: inset(50%); */
+        height: 1px;
+        width: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        /* position: absolute; */
+        
+        &:nth-of-type(6):hover ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -500%; }
+        &:nth-of-type(5):hover ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -400%; }
+        &:nth-of-type(4):hover ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -300%; }
+        &:nth-of-type(3):hover ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -200%; }
+        &:nth-of-type(2):hover ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -100%; }
+        &:nth-of-type(1):hover ~ .carousel__slides .carousel__slide:first-of-type { margin-left: 0%; }
+/*         
+        &:nth-of-type(1):hover ~ .carousel__thumbnails li:nth-of-type(1) { box-shadow: 0px 0px 0px 5px rgba(0,0,255,0.5); }
+        &:nth-of-type(2):hover ~ .carousel__thumbnails li:nth-of-type(2) { box-shadow: 0px 0px 0px 5px rgba(0,0,255,0.5); }
+        &:nth-of-type(3):hover ~ .carousel__thumbnails li:nth-of-type(3) { box-shadow: 0px 0px 0px 5px rgba(0,0,255,0.5); }
+        &:nth-of-type(4):hover ~ .carousel__thumbnails li:nth-of-type(4) { box-shadow: 0px 0px 0px 5px rgba(0,0,255,0.5); }
+        &:nth-of-type(5):hover ~ .carousel__thumbnails li:nth-of-type(5) { box-shadow: 0px 0px 0px 5px rgba(0,0,255,0.5); }
+        &:nth-of-type(6):hover ~ .carousel__thumbnails li:nth-of-type(6) { box-shadow: 0px 0px 0px 5px rgba(0,0,255,0.5); } */
+    }
+}
+.carousel__thumbnails li {
+    transition: all 0.3s ease-in-out;
+}
+
+.carousel__thumbnails li:hover {
+    transform: scale(1.1);
+    box-shadow: none;
+}
+
+.carousel__slides {
+    position: relative;
+    z-index: 1;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    display: flex;
+    
+}
+
+.carousel__slide {
+    
+    
+    position: relative;
+    display: block;
+    flex: 1 0 100%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: all 300ms ease-out;
+    vertical-align: top;
+    box-sizing: border-box;
+    white-space: normal;
+    
+    figure {
+        display: flex;
+        margin: 0;
+    }
+    
+    div {
+        @include aspect-ratio(3, 2);
+        width: 100%;
+    }
+    
+    img {
+        display: block;
+        flex: 1 1 auto;
+        object-fit: cover;
+    }
+    
+    figcaption {
+        align-self: flex-end;
+        padding: 20px 20px 0 20px;
+        flex: 0 0 auto;
+        width: 25%;
+        min-width: 150px;
+    }
+    
+    .credit {
+        margin-top: 1rem;
+        color: rgba(0, 0, 0, 0.5);
+        display: block;        
+    }
+    
+    &.scrollable {
+        overflow-y: scroll;
+    }
+}
+figure {
+    display: flex;
+}
+
+div {
+    margin-right: 10px;
+}
+
+img {
+    max-width: 100%;
+}
+
+figcaption {
+    align-self: center;
+}
+
+
+.carousel__thumbnails {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    
+    .carousel__slides + & {
+        margin-top: 20px;
+    }
+    
+    li {        
+        flex: 1 1 auto;
+        max-width: calc((100% / 6) - 20px);  
+        margin: 0 10px;
+        transition: all 300ms ease-in-out;
+    }
+    
+    label {
+        display: block;
+        @include aspect-ratio(1,1);
+        
+                  
+        &:hover,
+        &:focus {
+            cursor: pointer;
+            
+            img {
+                box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.25);
+                transition: all 300ms ease-in-out;
+                border-radius: 20px;
+            }
+        }
+    }
+    
+    img {
+
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+        box-shadow: 0 4px 10px rgba(0,0,0,.25);
+        margin: 0 -10px;
+    }
+}
+h3{
+    font-family: 'Courier New', Courier, monospace;
+}
+    </style>
+</head>
+<body>
+    <div class="ic-figure-hover w-embed"><svg width="12" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 0H6H12V6V12H6H0V6V0Z" fill="#F1F2EE"></path>
+        </svg></div>
+    <h1>Welcome to Online Recruitment Solution</h1>
+    <!-- <p>The best way to find and hire the right talent for your company.</p> -->
+    <p data-w-id="a789cbcc-1ed7-ea05-a1c5-3ff4024190fb" style="font-variation-settings: &quot;wght&quot; 300; opacity: 1;" class="paragraph weight-light caps display">right talent<br> for your company.</p>
+    <h3>A platform that helps companies find and hire the right talent.
+         The website offers a range of features to make the recruitment process easier, including the ability to post jobs, manage applications, 
+         search and filter candidates, rank and evaluate candidates with smart tools, communicate and schedule interviews with candidates,
+          and save time and money with an efficient and affordable service. However, there is no information available in the current web
+           page context about the website's track record or success.
+         You can log in or register to get started and learn more about the platform.</h3>
+    <!-- <ul>
+        <li>Post jobs and manage applications easily</li>
+        <li>Search and filter candidates based on location and job roles</li>
+        <li>Rank and evaluate candidates with smart tools</li>
+        <li>Communicate and schedule interviews with candidates</li>
+        <li>Save time and money with our efficient and affordable service</li>
+        
+    </ul> -->
+
+    <ul>
+        <a href="login.html">Login</a> or <a href="register.html">Register</a> to get started.
+    </ul>
+    <!-- <img alt="CSS Carousels - CSS Carousel" data-src="https://bestof.nyc3.digitaloceanspaces.com/devsnap.me/sam/carousel.gif" src="https://bestof.nyc3.digitaloceanspaces.com/devsnap.me/sam/carousel.gif" lazy="loaded"> -->
+    <section>
+        <div class="container">
+            <div class="carousel">
+                <input type="radio" name="slides" hover="hover" id="slide-1">
+                <input type="radio" name="slides" id="slide-2">
+                <input type="radio" name="slides" id="slide-3">
+                <input type="radio" name="slides" id="slide-4">
+                <input type="radio" name="slides" id="slide-5">
+                <input type="radio" name="slides" id="slide-6">
+                <ul class="carousel__slides">
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="https://picsum.photos/id/1041/800/450" alt="">
+                            </div>
+                            <figcaption>
+                                Post jobs and manage applications easily
+                                <!-- <span class="credit">Photo: Tim Marshall</span> -->
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="https://picsum.photos/id/1043/800/450" alt="">
+                            </div>
+                            <figcaption>
+                                Search and filter candidates based on location and job roles
+                                <!-- <span class="credit">Photo: Christian Joudrey</span>                             -->
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="https://picsum.photos/id/1044/800/450" alt="">
+                            </div>
+                            <figcaption>
+                                Rank and evaluate candidates with smart tools
+                                <!-- <span class="credit">Photo: Steve Carter</span>                             -->
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="https://picsum.photos/id/1045/800/450" alt="">
+                            </div>
+                            <figcaption>
+                                Communicate and schedule interviews with candidates
+                                <!-- <span class="credit">Photo: Aleksandra Boguslawska</span>                             -->
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="https://picsum.photos/id/1049/800/450" alt="">
+                            </div>
+                            <figcaption>
+                                Save time and money with our efficient and affordable service
+                                <!-- <span class="credit">Photo: Rosan Harmens</span>                             -->
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="https://picsum.photos/id/1052/800/450" alt="">
+                            </div>
+                            <figcaption>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <!-- <span class="credit">Photo: Annie Spratt</span>                             -->
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ul>    
+                <ul class="carousel__thumbnails">
+                    <li>
+                        <label for="slide-1"><img src="https://picsum.photos/id/1041/150/150" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-2"><img src="https://picsum.photos/id/1043/150/150" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-3"><img src="https://picsum.photos/id/1044/150/150" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-4"><img src="https://picsum.photos/id/1045/150/150" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-5"><img src="https://picsum.photos/id/1049/150/150" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-6"><img src="https://picsum.photos/id/1052/150/150" alt=""></label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="app.js">js</script>
+</html>

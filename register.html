@@ -1,0 +1,130 @@
+
+<html>
+<head>
+    <title>Register - Online Recruitment Solution</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    animation: fadeIn 2s;
+    background-color: #4CAF50;
+    color: white;
+    margin: 0;
+    padding: 20px;
+}
+
+p {
+    animation: fadeIn 2s;
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+}
+
+form {
+    animation: fadeIn 2s;
+    display: block;
+    margin: 20px auto;
+    max-width: 400px;
+    padding: 20px;
+}
+
+label {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    border: 1px solid #ccc;
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    border-radius:5px;
+    border:none;
+    color:white;
+    cursor:pointer;
+    font-size:1.2em;
+    padding:10px 20px
+}
+
+a {
+   animation: fadeIn 2s; 
+   color:#4CAF50; 
+   text-decoration:none
+}
+
+@keyframes fadeIn {
+   from { opacity:0; }
+   to { opacity:1; }
+}
+.contact-form-wrap {
+    width: 70%;
+    background-color: #fcfcfc55;
+    border-radius: 20px;
+    padding: 5.5em 4.5em;
+}
+element.style {
+    opacity: 1;
+    transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+}
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-link-txt {
+    color: #333;
+    text-decoration: none;
+}
+
+.nav-link-txt:hover .underline-hover {
+    width: 100%;
+}
+
+.underline-hover {
+    background-color: #4CAF50;
+    height: 2px;
+    transition: width 0.3s ease-in-out;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="nav-col-middle"><nav role="navigation" class="nav-menu w-nav-menu">
+        <a data-w-id="c92ec97f-ae34-d938-6b05-a68f86f28a91" href="/business-solutions/platform" class="nav-link-txt w-inline-block"><div class="link-wrapper"><div class="nav-link">Business Solutions</div><div class="underline-hover" style="width: 0%; height: 1.99755px;"></div></div></a>
+        <a data-w-id="c92ec97f-ae34-d938-6b05-a68f86f28a96" href="/science/our-approach" class="nav-link-txt w-inline-block"><div class="link-wrapper"><div class="nav-link">Science</div><div class="underline-hover" style="width: 0%; height: 1.99755px;"></div></div></a><a data-w-id="c92ec97f-ae34-d938-6b05-a68f86f28a9b" href="/about" class="nav-link-txt w-inline-block"><div class="link-wrapper"><div class="nav-link">About</div><div class="underline-hover" style="width: 0%; height: 1.99755px;"></div></div></a>
+        <a data-w-id="c92ec97f-ae34-d938-6b05-a68f86f28aa0" href="/pricing" class="nav-link-txt w-inline-block"><div class="link-wrapper"><div class="nav-link">Pricing</div><div class="underline-hover" style="width: 0%; height: 1.99755px;"></div></div></a><a data-w-id="c92ec97f-ae34-d938-6b05-a68f86f28aa5" href="/resources/blog" class="nav-link-txt w-inline-block"><div class="link-wrapper"><div class="nav-link">Resources</div><div class="underline-hover" style="width: 0%; height: 1.99755px;"></div></div></a><a data-w-id="c92ec97f-ae34-d938-6b05-a68f86f28aaa" href="/contact" aria-current="page" class="nav-link-txt w-inline-block w--current"><div class="link-wrapper"><div class="nav-link">Contact</div><div class="underline-hover" style="width: 0%; height: 1.99755px;"></div></div></a></nav></div>
+    
+    <!-- <h1>Register for Online Recruitment Solution</h1> -->
+    <p>Please fill in the following details to create your account.</p>
+    <form action="register.php" method="post">
+        <label for="company">Company Name:</label>
+        <input type="text" id="company" name="company" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <label for="confirm">Confirm Password:</label>
+        <input type="password" id="confirm" name="confirm" required>
+        <input type="submit" value="Register">
+    </form>
+    <!-- <div style="opacity: 1; transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" class="contact-form-wrap"><div class="form-block w-form"><form id="wf-form-Contact-form" name="wf-form-Contact-form" data-name="Contact form" method="get" class="form-contact" data-wf-page-id="644778a14084c932eebff15b" data-wf-element-id="9171634b-9274-a2df-99e5-970890fe5704" aria-label="Contact form"><div class="form-2-cols"><div class="form-input"><label for="first-name-2" class="form-label" style="opacity: 0; transform: translate3d(0px, 2em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">First name</label><input type="text" class="form-field w-input" maxlength="256" name="first-name" data-name="first-name" placeholder="First name *" id="first-name-2" required=""></div><div class="form-input"><label for="last-name-2" class="form-label" style="opacity: 0; transform: translate3d(0px, 2em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">Last name</label><input type="text" class="form-field w-input" maxlength="256" name="last-name" data-name="last-name" placeholder="Last name *" id="last-name-2" required=""></div></div><div class="form-2-cols"><div class="form-input"><label for="company-2" class="form-label" style="opacity: 0; transform: translate3d(0px, 2em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">Company</label><input type="text" class="form-field w-input" maxlength="256" name="company" data-name="company" placeholder="Company" id="company-2"></div><div class="form-input"><label for="company-size-2" class="form-label" style="opacity: 0; transform: translate3d(0px, 2em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">Company size</label><select id="company-size-2" name="company-size" data-name="company-size" class="form-field w-select"><option value="">Company size</option><option value="First">Less than 100 employees</option><option value="Second"> 100-999 employees</option><option value="Third">1000-1999 employees</option><option value="Fourth">2000+ employees</option></select></div></div><div class="form-2-cols"><div class="form-input"><label for="phone-number-2" class="form-label" style="opacity: 0; transform: translate3d(0px, 2em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">Phone number</label><input type="tel" class="form-field w-input" maxlength="256" name="phone-number" data-name="phone-number" placeholder="Phone number *" id="phone-number-2" required=""></div><div class="form-input"><label for="email-3" class="form-label" style="opacity: 0; transform: translate3d(0px, 2em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">Email</label><input type="email" class="form-field w-input" maxlength="256" name="email" data-name="email" placeholder="Email *" id="email-3" required=""></div></div><div class="form-group-wrap"><div class="form-input"><label for="name-5" class="form-label">How can we help?</label></div><div class="form-checkboxes-row"><label class="w-checkbox form-checkbox-field"><div class="w-checkbox-input w-checkbox-input--inputType-custom form-checkbox"></div><input type="checkbox" id="checkbox---Understanding-Psychosocial-Risks" name="checkbox---Understanding-Psychosocial-Risks" data-name="checkbox - Understanding Psychosocial Risks" style="opacity:0;position:absolute;z-index:-1"><span class="checkbox-label w-form-label" for="checkbox---Understanding-Psychosocial-Risks">Understanding Psychosocial Risks</span></label><label class="w-checkbox form-checkbox-field"><div class="w-checkbox-input w-checkbox-input--inputType-custom form-checkbox"></div><input type="checkbox" id="checkbox---Learn-more-about-workshops-or-seminars" name="checkbox---Learn-more-about-workshops-or-seminars" data-name="checkbox - Learn more about workshops or seminars" style="opacity:0;position:absolute;z-index:-1"><span class="checkbox-label w-form-label" for="checkbox---Learn-more-about-workshops-or-seminars">Learn more about workshops or seminars</span></label><label class="w-checkbox form-checkbox-field"><div class="w-checkbox-input w-checkbox-input--inputType-custom form-checkbox"></div><input type="checkbox" id="checkbox---Creating-a-Psychologically-Safe-Workforce" name="checkbox---Creating-a-Psychologically-Safe-Workforce" data-name="checkbox - Creating a Psychologically Safe Workforce" style="opacity:0;position:absolute;z-index:-1"><span class="checkbox-label w-form-label" for="checkbox---Creating-a-Psychologically-Safe-Workforce">Creating a Psychologically Safe Workforce</span></label><label class="w-checkbox form-checkbox-field"><div class="w-checkbox-input w-checkbox-input--inputType-custom form-checkbox"></div><input type="checkbox" id="checkbox---General-Inquiry" name="checkbox---General-Inquiry" data-name="checkbox - General Inquiry" style="opacity:0;position:absolute;z-index:-1"><span class="checkbox-label w-form-label" for="checkbox---General-Inquiry">General Inquiry</span></label><label class="w-checkbox form-checkbox-field"><div class="w-checkbox-input w-checkbox-input--inputType-custom form-checkbox"></div><input type="checkbox" id="checkbox---Request-a-demo" name="checkbox---Request-a-demo" data-name="checkbox - Request a demo" style="opacity:0;position:absolute;z-index:-1"><span class="checkbox-label w-form-label" for="checkbox---Request-a-demo">Request a demo</span></label><label class="w-checkbox form-checkbox-field"><div class="w-checkbox-input w-checkbox-input--inputType-custom form-checkbox"></div><input type="checkbox" id="checkbox---Purchase-our-Software" name="checkbox---Purchase-our-Software" data-name="checkbox - Purchase our Software" style="opacity:0;position:absolute;z-index:-1"><span class="checkbox-label w-form-label" for="checkbox---Purchase-our-Software">Purchase our Software</span></label><label class="w-checkbox form-checkbox-field"><div class="w-checkbox-input w-checkbox-input--inputType-custom form-checkbox"></div><input type="checkbox" id="checkbox---Learn-more-about-our-Services" name="checkbox---Learn-more-about-our-Services" data-name="checkbox - Learn more about our Services" style="opacity:0;position:absolute;z-index:-1"><span class="checkbox-label w-form-label" for="checkbox---Learn-more-about-our-Services">Learn more about our Services</span></label><label class="w-checkbox form-checkbox-field"><div class="w-checkbox-input w-checkbox-input--inputType-custom form-checkbox"></div><input type="checkbox" id="checkbox---Other" name="checkbox---Other" data-name="checkbox - Other" style="opacity:0;position:absolute;z-index:-1"><span class="checkbox-label w-form-label" for="checkbox---Other">Other</span></label></div></div><div class="form-input"><label for="message-2" class="form-label" style="opacity: 0; transform: translate3d(0px, 2em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">Message</label><textarea id="message-2" name="message" maxlength="5000" data-name="message" placeholder="Your message" class="form-field w-input"></textarea></div><input type="submit" value="Submit" data-wait="Please wait..." class="button-tertiary w-button"></form><div class="form-success-message w-form-done" tabindex="-1" role="region" aria-label="Contact form success"><div class="body-default">Thank you! Your submission has been received!</div></div><div class="w-form-fail" tabindex="-1" role="region" aria-label="Contact form failure"><div class="body-small">Oops! Something went wrong while submitting the form. Please try again or contact us.</div></div></div></div> -->
+    <p>Already have an account? <a href="login.html">Login here</a>.</p>
+</body>
+</html>
