@@ -1,7 +1,7 @@
 
 <html>
 <head>
-    <title>Online Recruitment Solution</title>
+    <title>Home </title>
     <style>
         /* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap'); */
 
@@ -214,7 +214,7 @@ word-spacing: 1px;
     margin: 36px auto;
     max-width: 100%;
     border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0,0,0,.25);
+    /* box-shadow: 0 4px 10px rgba(0,0,0,.25); */
     margin: 0 -10px;
     
     > input {
@@ -227,7 +227,7 @@ word-spacing: 1px;
         padding: 0;
         /* position: absolute; */
         
-        &:nth-of-type(6):hover ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -500%; }
+        &:nth-of-type(6):hover ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -500%; margin-right: 100%; }
         &:nth-of-type(5):hover ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -400%; }
         &:nth-of-type(4):hover ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -300%; }
         &:nth-of-type(3):hover ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -200%; }
@@ -363,34 +363,52 @@ figcaption {
     }
     
     img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100px;
+    box-shadow: 0px 0px 10px lightgrey;
+    margin: 0 -10px;
+}
 
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 20px;
-        box-shadow: 0 4px 10px rgba(0,0,0,.25);
-        margin: 0 -10px;
-    }
 }
-h3{
-    font-family: 'Courier New', Courier, monospace;
+h3 {
+    font-family: "Space Grotesk", sans-serif;
+    /* font-weight: 300; */
+    text-align: left;
+    font-style: oblique;
+    font-weight: lighter;
+    display: flex;
+    font-size: 39px;
+    line-height: 60px;
+    margin-left: 5%;
+    margin-bottom: 27px;
 }
+
+.container {
+    /* width: 120%; */
+    margin: 0 auto;
+    display: flex;
+    height: 70%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    box-shadow: 0px 0px 10px lightgrey;
+    padding: 10px;
+}
+
     </style>
 </head>
 <body>
     <div class="ic-figure-hover w-embed"><svg width="12" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M0 0H6H12V6V12H6H0V6V0Z" fill="#F1F2EE"></path>
         </svg></div>
-    <h1>Welcome to Online Recruitment Solution</h1>
+        
     <!-- <p>The best way to find and hire the right talent for your company.</p> -->
     <p data-w-id="a789cbcc-1ed7-ea05-a1c5-3ff4024190fb" style="font-variation-settings: &quot;wght&quot; 300; opacity: 1;" class="paragraph weight-light caps display">right talent<br> for your company.</p>
-    <h3>A platform that helps companies find and hire the right talent.
-         The website offers a range of features to make the recruitment process easier, including the ability to post jobs, manage applications, 
-         search and filter candidates, rank and evaluate candidates with smart tools, communicate and schedule interviews with candidates,
-          and save time and money with an efficient and affordable service. However, there is no information available in the current web
-           page context about the website's track record or success.
-         You can log in or register to get started and learn more about the platform.</h3>
+    
     <!-- <ul>
         <li>Post jobs and manage applications easily</li>
         <li>Search and filter candidates based on location and job roles</li>
@@ -399,13 +417,10 @@ h3{
         <li>Save time and money with our efficient and affordable service</li>
         
     </ul> -->
-
-    <ul>
-        <a href="login.html">Login</a> or <a href="register.html">Register</a> to get started.
-    </ul>
-    <!-- <img alt="CSS Carousels - CSS Carousel" data-src="https://bestof.nyc3.digitaloceanspaces.com/devsnap.me/sam/carousel.gif" src="https://bestof.nyc3.digitaloceanspaces.com/devsnap.me/sam/carousel.gif" lazy="loaded"> -->
     <section>
         <div class="container">
+            <h3>
+                The website makes recruitment process easier, post jobs, manage applications.</h3>
             <div class="carousel">
                 <input type="radio" name="slides" hover="hover" id="slide-1">
                 <input type="radio" name="slides" id="slide-2">
@@ -504,6 +519,11 @@ h3{
             </div>
         </div>
     </section>
+    
+
+    <ul>
+        <a href="login.html">Login</a> or <a href="register.html">Register</a> to get started.
+    </ul>
 </body>
 <script src="app.js">js</script>
 </html>
