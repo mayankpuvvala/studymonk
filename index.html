@@ -43,9 +43,15 @@ h1 {
 
 p {
     animation: fadeIn 2ms;
-    margin: 20px auto;
+    margin: 10px auto;
     max-width: 600px;
-    padding: 20px;
+    font-size: x-large;
+    font-family: 'Lato', sans-serif;
+    /* padding: 20px; */
+}
+p:hover {
+    transform: scaleX(1.2);
+    transition: transform 0.5s;
 }
 
 ul {
@@ -83,7 +89,7 @@ a {
 }
 
 .paragraph.weight-light.caps.display:hover{
-    font-size: large;
+    /* font-size: large; */
     transition: all .3s;
     /* font-variation-settings: &quot;wght&quot; 300; opacity: 1; */
 
@@ -324,8 +330,14 @@ img {
 }
 
 figcaption {
-    align-self: center;
+    align-self: left;
 }
+.carousel__thumbnails img {
+    width: 120px;
+    height: 70px;
+    border-radius: 10px;
+}
+
 
 
 .carousel__thumbnails {
@@ -355,9 +367,9 @@ figcaption {
             cursor: pointer;
             
             img {
-                box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.25);
+                /* box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.25); */
                 transition: all 300ms ease-in-out;
-                border-radius: 20px;
+                /* border-radius: 20px; */
             }
         }
     }
@@ -368,7 +380,7 @@ figcaption {
     height: 100%;
     object-fit: cover;
     border-radius: 100px;
-    box-shadow: 0px 0px 10px lightgrey;
+    /* box-shadow: 0px 0px 10px lightgrey; */
     margin: 0 -10px;
 }
 
@@ -385,12 +397,31 @@ h3 {
     margin-left: 5%;
     margin-bottom: 27px;
 }
-
+element.style {
+    will-change: transform;
+    transform: translate3d(0px, -5.9105em, 0px) scale3d(1.11821, 1.11821, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+}
+.hero-img-shape {
+    z-index: 3;
+    width: 56%;
+    border-radius: 0 20.125em 20px 0;
+    margin-top: -8em;
+    position: relative;
+}
+img {
+    max-width: 100%;
+    display: inline-block;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    border: 0;
+    vertical-align: middle;
+}
 .container {
-    /* width: 120%; */
     margin: 0 auto;
     display: flex;
-    height: 70%;
+    width: 1300px;
+     height: 600px;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -419,9 +450,10 @@ h3 {
     </ul> -->
     <section>
         <div class="container">
+            
             <h3>
                 The website makes recruitment process easier, post jobs, manage applications.</h3>
-            <div class="carousel">
+                <div class="carousel">
                 <input type="radio" name="slides" hover="hover" id="slide-1">
                 <input type="radio" name="slides" id="slide-2">
                 <input type="radio" name="slides" id="slide-3">
@@ -520,10 +552,38 @@ h3 {
         </div>
     </section>
     
-
+    <img src="240_F_261258321_GP0Q6btipSzYzOQYQCvM8xzbU78jebdk.jpg" loading="eager" sizes="(max-width: 479px) 94vw, (max-width: 991px) 91vw, 56vw" alt="woman writing on whiteboard" class="hero-img-shape" style="will-change: transform; transform: translate3d(0px, -2.9122em, 0px) scale3d(1.05824, 1.05824, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+    <!-- <div class="gradient-hero-wrap" style="will-change: transform; transform: translate3d(-31.0686%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"><div style="opacity: 1; transform: translate3d(0%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" class="gradient-hero-load"><img src="https://uploads-ssl.webflow.com/6411205aa4059e3917a059f4/64573b801a9721b0ed3980d8_gradient-hero-orange.svg" loading="eager" alt="" class="gradient-hero"></div></div>         -->
+            
     <ul>
         <a href="login.html">Login</a> or <a href="register.html">Register</a> to get started.<a href="search.html">Candidates</a>
     </ul>
-</body>
+    <script>
+
+        // CUSTOM CURSOR © Code by T.RICKS 
+        // .cursor class needs to have a mouse click interaction applied
+          $('a').mouseenter(function() {
+          $('.cursor').click();
+        });
+        $('a').mouseleave(function() {
+          $('.cursor').click();
+        });
+        
+        </script>
+        <script>
+        window.addEventListener('scroll', function() {
+            var scrollPosition = window.scrollY;
+            var image = document.querySelector('.hero-img-shape');
+            var scale = 0.75 + (scrollPosition / 1000);
+            if (scale < 1) {
+                image.style.transform = 'scale(' + scale + ')';
+                image.style.transition = 'transform 0.25s';
+            }
+        });
+        
+
+        </script>
+        
 <script src="app.js">js</script>
+</body>
 </html>
