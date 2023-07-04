@@ -163,17 +163,17 @@ element.style {
     left: 0%;
     right: 0%;
 }
-@mixin aspect-ratio($width, $height) {
-  position: relative;
+/* @mixin aspect-ratio($width, $height) { */
+  /* position: relative;
     
   &:before {
     display: block;
     content: "";
     width: 100%;
     padding-top: ($height / $width) * 100%;
-  }
+  } */
     
-  > img {
+  /* > img {
         position: absolute;
         top: 0;
         left: 0;
@@ -182,7 +182,7 @@ element.style {
         width: 10%;
         height: 100%;
   }
-}
+} */
 
 
 section {
@@ -279,7 +279,7 @@ word-spacing: 1px;
     height: 100%;
     overflow: hidden;
     transition: all 300ms ease-out;
-    vertical-align: top;
+    /* vertical-align: top; */
     box-sizing: border-box;
     white-space: normal;
     
@@ -289,7 +289,7 @@ word-spacing: 1px;
     }
     
     div {
-        @include aspect-ratio(3, 2);
+        /* @include aspect-ratio(3, 2); */
         width: 100%;
     }
     
@@ -359,7 +359,7 @@ figcaption {
     
     label {
         display: block;
-        @include aspect-ratio(1,1);
+        /* @include aspect-ratio(1,1); */
         
                   
         &:hover,
