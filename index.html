@@ -431,6 +431,7 @@ img {
 }
   nav {
     background-color: white;
+
   }
 
   nav ul {
@@ -439,8 +440,8 @@ img {
     padding: 0;
     display: flex;
     
-    justify-content: flex-end;
-    width: 1% right;
+    justify-content: center;
+    /* width: 1% right; */
   }
 
   nav li {
@@ -450,7 +451,7 @@ img {
   nav a {
     display: block;
     
-    margin-right: 50px;
+    /* margin-right: 50px; */
     padding: 10px 20px;
     text-decoration: none;
     color: #333;
@@ -465,7 +466,8 @@ img {
 
   .dropdown-content {
     display: none;
-    
+    position: absolute;
+    top: 100%;
     width: 50vw;
     
     border-radius: 40px;
@@ -479,7 +481,7 @@ display:block
 }
 
   .info-section {
-    padding: 20px;
+    padding: 70px;
     background-color: #f9f9f9;
   }
   #main-header .menu {
@@ -500,25 +502,20 @@ ol, ul {
     box-sizing: border-box;
 }
 
+  .scroll-indicator {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4px;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    box-shadow: 0 0 10px #feb47b, 0 0 20px #ff7e5f, 0 0 30px #feb47b, 0 0 40px #ff7e5f;
+    z-index: 9999;
+  }
     </style>
 </head>
 <body>
     
-    <!-- <div class="ic-figure-hover w-embed"><svg width="12" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M0 0H6H12V6V12H6H0V6V0Z" fill="#F1F2EE"></path>
-        </svg></div> -->
-        
-    <!-- <p>The best way to find and hire the right talent for your company.</p> -->
-    <!-- <p data-w-id="a789cbcc-1ed7-ea05-a1c5-3ff4024190fb" style="font-variation-settings: &quot;wght&quot; 300; opacity: 1;" class="paragraph weight-light caps display">right talent<br> for your company.</p> -->
-    
-    <!-- <ul>
-        <li>Post jobs and manage applications easily</li>
-        <li>Search and filter candidates based on location and job roles</li>
-        <li>Rank and evaluate candidates with smart tools</li>
-        <li>Communicate and schedule interviews with candidates</li>
-        <li>Save time and money with our efficient and affordable service</li>
-        
-    </ul> -->
+    <div class="scroll-indicator"></div>
     <nav>
         <ul>
           <li>
@@ -673,6 +670,19 @@ ol, ul {
 
         </script>
         
+<script>
+    var scrollIndicator = document.querySelector('.scroll-indicator');
+  
+    window.addEventListener('scroll', function() {
+      var scrollTop = window.scrollY;
+      var docHeight = document.body.offsetHeight;
+      var winHeight = window.innerHeight;
+      var scrollPercent = scrollTop / (docHeight - winHeight);
+      var scrollPercentRounded = Math.round(scrollPercent * 100);
+      scrollIndicator.style.width = scrollPercentRounded + '%';
+    });
+  </script>
+  
         <script>
             var nav = document.querySelector('nav');
             var navItems = document.querySelectorAll('nav li');
