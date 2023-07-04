@@ -1,0 +1,55 @@
+
+    <!-- Search Results -->
+    <!-- You can use a table element or a list element to display the search results -->
+    <!-- For example, using a table element with some dummy data -->
+    <!-- You can use PHP or any other server-side language to fetch the data from the database and display it dynamically -->
+    <table>
+        <!-- Use a thead element for the table header -->
+        <thead>
+            <!-- Use a tr element for each table row -->
+            <tr>
+                <!-- Use a th element for each table header cell -->
+                <th>Name</th>
+                <th>Location</th>
+                <th>Job Role</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <!-- Use a tbody element for the table body -->
+        <tbody>
+            <!-- Use a tr element for each table row -->
+            <!-- Use dummy data for demonstration purposes -->
+            <!-- You can use PHP or any other server-side language to loop through the data and display it dynamically -->
+            <tr>
+                <!-- Use a td element for each table data cell -->
+                <td>Ahmed Ali</td>
+                <td>Dubai</td>
+                <td>Accountant</td>
+                <!-- Use an a element for each action link -->
+                <!-- You can use PHP or any other server-side language to pass the candidate id as a parameter to the action page -->
+                <td><a href="view.php?id=1">View</a> | <a href="rank.php?id=1">Rank</a></td>
+            </tr>
+            <tr>
+                <td>Fatima Hassan</td>
+                <td>Abu Dhabi</td>
+                <td>Teacher</td>
+                <td><a href="view.php?id=2">View</a> | <a href="rank.php?id=2">Rank</a></td>
+            </tr>
+            <tr>
+                <td>Mohammed Khan</td>
+                <td>Sharjah</td>
+                <td>Engineer</td>
+                <td><a href="view.php?id=3">View</a> | <a href="rank.php?id=3">Rank</a></td>
+            </tr>
+        </tbody>
+    </table>
+    <ul class="pagination">
+        <!-- Use an li element for each pagination link -->
+        <!-- Use an a element for each link with the page number as the text and as a parameter in the URL -->
+        <!-- You can use PHP or any other server-side language to highlight the current page link with a different style or class -->
+        <li><a href="search.php?page=1">1</a></li>
+        <li><a href="search.php?page=2">2</a></li>
+        <li><a href="search.php?page=3">3</a></li>
+        <li><a href="search.php?page=4">4</a></li>
+        <li><a href="search.php?page=5">5/a></li>
+    </ul>
