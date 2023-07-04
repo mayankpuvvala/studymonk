@@ -35,7 +35,7 @@ html {
 
 h1 {
     animation: fadeIn 2ms;
-    background-color: #4CAF50;
+    background-color: #99DBF5;
     color: white;
     margin: 0;
     padding: 20px;
@@ -70,7 +70,7 @@ li {
 
 a {
     animation: fadeIn 2ms;
-    background-color: #4CAF50;
+    background-color: #85cfed;
     border-radius: 5px;
     
     color: white;
@@ -429,16 +429,87 @@ img {
     box-shadow: 0px 0px 10px lightgrey;
     padding: 10px;
 }
+  nav {
+    background-color: white;
+  }
+
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+    justify-content: flex-end;
+    width: 1% right;
+  }
+
+  nav li {
+    position: relative;
+  }
+
+  nav a {
+    display: block;
+    
+    margin-right: 50px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+    background-color: white;
+    transition: color 0.5s, text-decoration 0.5s;
+  }
+
+  nav a:hover {
+    color: red;
+    text-decoration: underline;
+  }
+
+  .dropdown-content {
+    display: none;
+    
+    width: 50vw;
+    
+    border-radius: 40px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+nav li:hover .dropdown-content {
+display:block
+}
+
+  .info-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  #main-header .menu {
+    display: flex;
+    align-items: center;
+}
+#main-header .menu, #main-header .sub-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ol, ul {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    box-sizing: border-box;
+}
 
     </style>
 </head>
 <body>
-    <div class="ic-figure-hover w-embed"><svg width="12" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
+    
+    <!-- <div class="ic-figure-hover w-embed"><svg width="12" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M0 0H6H12V6V12H6H0V6V0Z" fill="#F1F2EE"></path>
-        </svg></div>
+        </svg></div> -->
         
     <!-- <p>The best way to find and hire the right talent for your company.</p> -->
-    <p data-w-id="a789cbcc-1ed7-ea05-a1c5-3ff4024190fb" style="font-variation-settings: &quot;wght&quot; 300; opacity: 1;" class="paragraph weight-light caps display">right talent<br> for your company.</p>
+    <!-- <p data-w-id="a789cbcc-1ed7-ea05-a1c5-3ff4024190fb" style="font-variation-settings: &quot;wght&quot; 300; opacity: 1;" class="paragraph weight-light caps display">right talent<br> for your company.</p> -->
     
     <!-- <ul>
         <li>Post jobs and manage applications easily</li>
@@ -448,6 +519,31 @@ img {
         <li>Save time and money with our efficient and affordable service</li>
         
     </ul> -->
+    <nav>
+        <ul>
+          <li>
+            <a href="#">Info</a>
+            <div class="dropdown-content">
+              <p>Learn more about our candidate hiring portal and how it can help you find the best talent for your company.</p>
+            </div>
+          </li>
+          <li>
+            <a href="#">History</a>
+            <div class="dropdown-content">
+              <p>Read about the history of our company and how we've been helping businesses find the right candidates for over 10 years.</p>
+            </div>
+          </li>
+          <li>
+            <a href="#">Contact Us</a>
+            <div class="dropdown-content">
+              <p>Get in touch with us to learn more about our services or to schedule a demo of our candidate hiring portal.</p>
+            </div>
+          </li>
+          <li>
+            <a href="search.html">Candidates</a>
+          </li>
+        </ul>
+      </nav>
     <section>
         <div class="container">
             
@@ -555,21 +651,14 @@ img {
     <img src="240_F_261258321_GP0Q6btipSzYzOQYQCvM8xzbU78jebdk.jpg" loading="eager" sizes="(max-width: 479px) 94vw, (max-width: 991px) 91vw, 56vw" alt="woman writing on whiteboard" class="hero-img-shape" style="will-change: transform; transform: translate3d(0px, -2.9122em, 0px) scale3d(1.05824, 1.05824, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
     <!-- <div class="gradient-hero-wrap" style="will-change: transform; transform: translate3d(-31.0686%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"><div style="opacity: 1; transform: translate3d(0%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" class="gradient-hero-load"><img src="https://uploads-ssl.webflow.com/6411205aa4059e3917a059f4/64573b801a9721b0ed3980d8_gradient-hero-orange.svg" loading="eager" alt="" class="gradient-hero"></div></div>         -->
             
-    <ul>
-        <a href="login.html">Login</a> or <a href="register.html">Register</a> to get started.<a href="search.html">Candidates</a>
-    </ul>
-    <script>
 
-        // CUSTOM CURSOR © Code by T.RICKS 
-        // .cursor class needs to have a mouse click interaction applied
-          $('a').mouseenter(function() {
-          $('.cursor').click();
-        });
-        $('a').mouseleave(function() {
-          $('.cursor').click();
-        });
-        
-        </script>
+    
+      
+      
+      
+    <ul>
+        <a href="login.html">Login</a> or <a href="register.html">Register</a> to get started.
+    </ul>
         <script>
         window.addEventListener('scroll', function() {
             var scrollPosition = window.scrollY;
@@ -584,6 +673,22 @@ img {
 
         </script>
         
+        <script>
+            var nav = document.querySelector('nav');
+            var navItems = document.querySelectorAll('nav li');
+          
+            navItems.forEach(function(navItem) {
+              navItem.addEventListener('mouseenter', function() {
+                var dropdownContent = this.querySelector('.dropdown-content');
+                var dropdownContentHeight = dropdownContent.offsetHeight;
+                nav.style.marginBottom = dropdownContentHeight + 'px';
+              });
+          
+              navItem.addEventListener('mouseleave', function() {
+                nav.style.marginBottom = '0px';
+              });
+            });
+          </script>
 <script src="app.js">js</script>
 </body>
 </html>
